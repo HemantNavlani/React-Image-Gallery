@@ -9,15 +9,20 @@ function useImageList(){
 
 
     async function downloadImages(){
-        setImageListState((state)=>({...state,isLoading:true}))
+        try{
+            setImageListState((state)=>({...state,isLoading:true}))
 
-    const response = await axios.get('https://api.slingacademy.com/v1/sample-data/photos?offset=0&limit=20')
-    // console.log(response)
+            const response = await axios.get('https://api.slingacademy.com/v1/sample-data/photos?offset=0&limit=20')
+        
+            const imageResults = response.data.photos;
+        
+            setImageListState((state)=>({...state,isLoading:false,imageList:imageResults}))
+        }
+        catch(e){
+            console.log('Something went wrong')
+        }
 
-    const imageResults = response.data.photos;
-    // console.log(imageResults);
-
-    setImageListState((state)=>({...state,isLoading:false,imageList:imageResults}))
+       
     }
 
     useEffect(()=>{

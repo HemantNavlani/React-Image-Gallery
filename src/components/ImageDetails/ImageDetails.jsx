@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import useImageDetails from "../../hooks/useImageDetails";
+import './ImageDetails.css'
 
 function ImageDetails(){
     const {id} = useParams();
@@ -7,10 +8,12 @@ function ImageDetails(){
     
 
     return (
+    <div className="image-details-wrapper">
+    <img src={imageDetails.url}  id = 'single-image' alt="" />
     <div>
     <h1>{imageDetails.title}</h1>
-    <h5>{imageDetails.description}</h5>
-    <img src={imageDetails.url} alt="" />
+    <p>{imageDetails.description}</p>
+    </div>
     </div>
     )
 }

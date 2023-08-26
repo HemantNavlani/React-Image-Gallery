@@ -17,14 +17,6 @@ function App() {
     React Image Gallery Project
     </Link>
     </h1>
-
-    {/* <h1>
-    <Link to='/image/:id'>
-      Jai Shree Ram
-    </Link>
-    </h1> */}
-
-
     <CustomRoutes/>
    </div>
   )

@@ -1,0 +1,16 @@
+img{
+    border-radius: 10%;
+    margin: 10px;
+    height: 420px;
+    width: 420px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image:hover{
+    background-color:antiquewhite;
+    height: 450px;
+    width: 450px;
+}

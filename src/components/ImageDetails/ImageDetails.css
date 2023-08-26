@@ -1,15 +1,19 @@
 .image-details-wrapper{
     margin-top: 5rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: #052E5E;
     color: white;
     padding: 50px;
     box-shadow: 12px 12px 12px 12px aqua;
+    align-self: center;
+    align-content: center;
 }
-
+.inner{
+    margin-left: 5%;
+}
 #single-image{
     box-shadow: 5px 3px 5px 3px antiquewhite;
 }

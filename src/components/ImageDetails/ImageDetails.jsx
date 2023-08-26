@@ -10,7 +10,7 @@ function ImageDetails(){
     return (
     <div className="image-details-wrapper">
     <img src={imageDetails.url}  id = 'single-image' alt="" />
-    <div>
+    <div className="inner">
     <h1>{imageDetails.title}</h1>
     <p>{imageDetails.description}</p>
     </div>

@@ -1,7 +1,12 @@
-.images-wrapper{
+.image-list-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
+h3{
+font-size: xx-large;
+   margin-left: 10%;
+}

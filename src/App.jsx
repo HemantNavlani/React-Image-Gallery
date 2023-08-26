@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ImageList from './components/ImageList/ImageList'
+import { Link } from 'react-router-dom'
+import CustomRoutes from './routes/CustomRoutes'
 
 
 function App() {
@@ -10,8 +12,20 @@ function App() {
 
   return (
    <div className='main'>
-   <h1 className='title'>React Image Gallery Project</h1>
-   <ImageList/>
+   <h1 className='title'>
+    <Link to='/'>
+    React Image Gallery Project
+    </Link>
+    </h1>
+
+    {/* <h1>
+    <Link to='/image/:id'>
+      Jai Shree Ram
+    </Link>
+    </h1> */}
+
+
+    <CustomRoutes/>
    </div>
   )
 }

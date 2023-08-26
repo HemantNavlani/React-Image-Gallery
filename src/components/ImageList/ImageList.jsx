@@ -5,17 +5,13 @@ import './ImageList.css'
 function ImageList(){
 
    const[imageListState,setImageListState] = useImageList();
-   
-
     return (
         <div className="image-list-wrapper">
         {imageListState.isLoading 
-        ? '...Loading '
-        :
-        <div className="images-wrapper">
-            {console.log(imageListState)}
-            {imageListState.imageList.map((p)=><Image  title={p.title} description = {p.description} image = {p.url} id={p.id}/>)}
-            </div>}
+        ? <h3>  ...Loading</h3>
+        :     
+       imageListState.imageList.map((p)=><Image key={p.id} title={p.title} description = {p.description} image = {p.url} id={p.id}/>)
+        }
         </div>
     )
 

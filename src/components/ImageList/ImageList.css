@@ -10,3 +10,20 @@ h3{
 font-size: xx-large;
    margin-left: 10%;
 }
+
+.buttons{
+    margin-left: 44%;
+    margin-top: 3rem;
+    padding: 10px;
+}
+
+button{
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    background: antiquewhite;
+    border: 2px solid brown;
+    font-size: large;
+    font-weight: 700;
+}
+
